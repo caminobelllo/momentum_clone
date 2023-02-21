@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital@1&family=PT+Serif:wght@400;700&family=Source+Sans+Pro:wght@300;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0px; top: 0px; right: 0px; bottom: 0px;
+    z-index: -1;    /* text의 z-index보다 작으면 뒷배경으로 설정됨*/
+    opacity:90%;
+}
+
+.hidden {
+    display: none;
+}
+
+#clock, #nameInput, #greeting {
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+}
+
+#clock {
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+    font-size: 125px;
+    margin: 0px;
+    color: whitesmoke;
+
+    position: absolute;
+    top: 110px;
+}
+
+#nameInput, #greeting {
+    padding: 5px 15px;
+    font-size: 40px;
+    border: 0;
+    border-bottom: 3px solid whitesmoke;
+    background-color: transparent;
+    padding: 0;
+}
+
+#nameInput::placeholder {
+    text-align: center;
+    display: inline-block;
+    color: whitesmoke;
+}
+
+#login-form {
+    margin: 50px;
+}
+
+#greeting {
+    background-color: transparent;
+    color: whitesmoke;
+    margin: 50px;
+    font-size: 52px;
+}
+
+#nameButton {
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+    background-color: transparent;
+    border: 3px solid rgb(202, 202, 202);
+    color: whitesmoke;
+    padding: 5px 15px;
+    margin: 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 25px;
+}
+
+#todo-id {
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 3px solid rgb(202, 202, 202);
+    padding: 5px 15px;
+    margin: 15px;
+}
+
+#todo-id::placeholder {
+    color: whitesmoke;
+}
+
+#todo-list {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: whitesmoke;
+}
+
+#todoButtonID {
+    margin: 10px;
+    padding: 5px;
+    border: 2px 5px;
+}
+
+#quote {
+    font-family: 'Cormorant', serif;
+    font-size: 35px;
+    font-weight: 400;
+    color: whitesmoke;
+    
+    position: absolute;
+    bottom: 50px;
+}
+
+#weather {
+    font-family: 'PT Serif', serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(232, 232, 0);
+
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
